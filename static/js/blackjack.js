@@ -45,6 +45,9 @@ function renderGame(){
     for(let i=0; i < cards.length; i++){
         cardsElement.textContent += cards[i] + ", ";
     }
+    cardsElement.textContent=cardsElement.textContent.substring(0,cardsElement.textContent.length - 2)
+
+    
     
     if(sum<=20){
         message="Do you want to draw a new card?";
@@ -57,6 +60,7 @@ function renderGame(){
     }
     
     messageElement.textContent=message;
+    
     
 }
 
