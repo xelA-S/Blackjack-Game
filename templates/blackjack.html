@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Blackjack Game</title>
+        <link rel="stylesheet" href={{ url_for('static',filename='css/style.css') }}>
+    </head>
+    <body>
+        <h1>Blackjack</h1>
+        <p id="intro">Would you like to play?</p>
+        <p id="cards">Cards:</p>
+        <p id="sum">Sum:</p>
+        <button id="start-btn" onclick="startGame()">Start Game</button>
+        <button onclick="NewCard()">New Card</button>
+        <script src="{{url_for('static', filename='js/blackjack.js')}}"></script>
+    </body>
+</html>
